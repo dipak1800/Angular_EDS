@@ -1,0 +1,56 @@
+.customContainer {
+  width: 40%;
+  margin-top: 60px;
+  padding: 20px 0;
+  .login {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 480;
+    letter-spacing: 2px;
+    font-family: sans-serif;
+    background-image: linear-gradient(
+      to top,
+      #fcc5e4 0%,
+      #fda34b 15%,
+      #ff7882 35%,
+      #c8699e 52%,
+      #7046aa 71%,
+      #0c1db8 87%,
+      #020f75 100%
+    );
+    background-clip: text;
+    color: transparent;
+  }
+  .customForms {
+    margin: 15px;
+    padding: 5px 0;
+    .customlabel {
+      font-size: 18px;
+      font-weight: 400;
+      font-family: serif;
+      padding: 2px 0;
+      color: darkblue;
+    }
+  }
+  .customButton {
+    text-align: center;
+    margin-top: 10px;
+    button {
+      padding: 8px 50px;
+      background-color: lightcoral;
+      color: darkblue;
+      border: 1px solid darkblue;
+      outline: none !important;
+      &:focus {
+        outline: none !important;
+        border: none !important;
+      }
+      &:hover {
+        background-color: palevioletred;
+        border-radius: 4px;
+        color: whitesmoke;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
