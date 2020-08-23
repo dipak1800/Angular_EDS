@@ -1,0 +1,17 @@
+<div c>
+  <h2 class="text-danger text-center">{{ ErrorMessage }}</h2>
+  <table [class.d-none]="isError" id="employeesTable">
+    <tr>
+      <th>Name</th>
+      <th>UserName</th>
+      <th>Phone</th>
+      <th>Action</th>
+    </tr>
+    <tr *ngFor="let employ of EmployLists">
+      <td>{{ employ.name }}</td>
+      <td>{{ employ.username }}</td>
+      <td>{{ employ.phone }}</td>
+      <td><button>Employ Details</button></td>
+    </tr>
+  </table>
+</div>
