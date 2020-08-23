@@ -9,7 +9,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 })
 export class EmployeesService {
   constructor(private _http: HttpClient) {}
-  url = 'https://jsonplaceholder.typicode.com/users';
+  url = 'http://dummy.restapiexample.com/api/v1/employees';
   //Original url is working fine in console,but when i set value it is returning Undefined
   getEmployees(): Observable<IEmployee[]> {
     return this._http

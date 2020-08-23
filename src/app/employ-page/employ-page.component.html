@@ -1,17 +1,20 @@
-<div c>
+<div class="employ-container">
   <h2 class="text-danger text-center">{{ ErrorMessage }}</h2>
+  <h2 class="employLists">
+    List Of Employees<i class="fas fa-user-check employ"></i>
+  </h2>
   <table [class.d-none]="isError" id="employeesTable">
     <tr>
       <th>Name</th>
-      <th>UserName</th>
-      <th>Phone</th>
+      <th>Salary</th>
+      <th>Age</th>
       <th>Action</th>
     </tr>
     <tr *ngFor="let employ of EmployLists">
-      <td>{{ employ.name }}</td>
-      <td>{{ employ.username }}</td>
-      <td>{{ employ.phone }}</td>
-      <td><button>Employ Details</button></td>
+      <td>{{ employ.employee_name }}</td>
+      <td>${{ employ.employee_salary }}</td>
+      <td>{{ employ.employee_age }}</td>
+      <td><button class="takeAction">Employ Details</button></td>
     </tr>
   </table>
 </div>

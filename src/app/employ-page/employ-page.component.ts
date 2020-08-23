@@ -12,7 +12,10 @@ export class EmployPageComponent implements OnInit {
 
   ngOnInit() {
     this._employeeService.getEmployees().subscribe(
-      (data) => (this.EmployLists = data),
+      (data) => {
+        let employData = Object.values(data)[1];
+        this.EmployLists = employData;
+      },
       (err) => {
         this.ErrorMessage = err;
         this.isError = true;
