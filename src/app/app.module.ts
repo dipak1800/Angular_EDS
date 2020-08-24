@@ -1,3 +1,4 @@
+import { UserAuthGuard } from './user-auth.guard';
 import { MaterialModule } from './material/material.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -30,6 +31,6 @@ import { CustomAgePipe } from './custom-age.pipe';
     HttpClientModule,
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent, UserAuthGuard],
 })
 export class AppModule {}

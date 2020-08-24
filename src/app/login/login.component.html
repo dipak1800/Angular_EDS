@@ -4,6 +4,7 @@
     <div class="form-group customForms">
       <label class="customlabel" for="">E-Mail</label>
       <input
+        #emails
         formControlName="userName"
         [class.is-invalid]="userName.invalid && userName.touched"
         type="text"
@@ -24,6 +25,7 @@
     <div class="form-group customForms">
       <label class="customlabel" for="">Password</label>
       <input
+        #passwords
         [class.is-invalid]="password.invalid && password.touched"
         formControlName="password"
         type="password"
@@ -42,7 +44,10 @@
     </div>
     <div class="customButton">
       <a>
-        <button routerLink="/employees" class="btn customButton">
+        <button
+          (click)="handleAuthentication(emails.value, passwords.value)"
+          class="btn customButton"
+        >
           Submit
         </button></a
       >
