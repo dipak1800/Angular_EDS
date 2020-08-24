@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 // import { EmployPageComponent } from './employ-page/employ-page.component';
 import { EmployDetailsPageComponent } from './employ-details-page/employ-details-page.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CustomAgePipe } from './custom-age.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     routingComponents,
     EmployDetailsPageComponent,
     PageNotFoundComponent,
+    CustomAgePipe,
   ],
   imports: [
     BrowserModule,

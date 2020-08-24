@@ -67,8 +67,7 @@
         >
           <span class="sr-only">Loading...</span>
         </div>
-        {{ EmployDetails.employee_age }}
-        <i [class.d-none]="!loading"> years old</i>
+        {{ EmployDetails.employee_age | customAge }}
       </td>
     </tr>
   </table>
