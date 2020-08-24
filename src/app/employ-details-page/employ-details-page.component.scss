@@ -1,0 +1,41 @@
+.customTable {
+  width: 60%;
+  margin: 100px auto;
+  td {
+    color: green;
+    font-size: 18px;
+    font-family: monospace;
+    letter-spacing: 1px;
+  }
+  tr {
+    font-size: 18px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+  }
+}
+.empDetailsTitle {
+  font-size: 24px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: serif;
+  background-image: linear-gradient(
+    to top,
+    #fcc5e4 0%,
+    #fda34b 15%,
+    #ff7882 35%,
+    #c8699e 52%,
+    #7046aa 71%,
+    #0c1db8 87%,
+    #020f75 100%
+  );
+  margin-top: 20px;
+  background-clip: text;
+  color: transparent;
+  font-weight: 700;
+}
+.main {
+  height: 100px;
+  margin: 100px;
+  text-align: center;
+  padding: 20px;
+}

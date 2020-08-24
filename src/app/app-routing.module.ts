@@ -3,6 +3,7 @@ import { AppSideNavComponent } from './app-side-nav/app-side-nav.component';
 import { EmployPageComponent } from './employ-page/employ-page.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { EmployDetailsPageComponent } from './employ-details-page/employ-details-page.component';
 
 const routes: Routes = [
   {
@@ -13,10 +14,10 @@ const routes: Routes = [
     path: 'employees',
     component: EmployPageComponent,
   },
-  // {
-  //   path: 'employees:id',
-  //   component: EmployPageComponent,
-  // },
+  {
+    path: 'employees/:id',
+    component: EmployDetailsPageComponent,
+  },
   {
     path: '**',
     component: PageNotFoundComponent,
@@ -32,4 +33,5 @@ export const routingComponents = [
   EmployPageComponent,
   PageNotFoundComponent,
   AppSideNavComponent,
+  EmployDetailsPageComponent,
 ];

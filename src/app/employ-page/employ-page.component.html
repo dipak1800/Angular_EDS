@@ -1,8 +1,8 @@
 <div class="employ-container">
   <h2 class="text-danger text-center">{{ ErrorMessage }}</h2>
-  <h2 class="employLists">
+  <h1 class="employLists">
     List Of Employees<i class="fas fa-user-check employ"></i>
-  </h2>
+  </h1>
   <table [class.d-none]="isError" id="employeesTable">
     <tr>
       <th>Name</th>
@@ -14,7 +14,11 @@
       <td>{{ employ.employee_name }}</td>
       <td>${{ employ.employee_salary }}</td>
       <td>{{ employ.employee_age }}</td>
-      <td><button class="takeAction">Employ Details</button></td>
+      <td>
+        <button (click)="handleRouting(employ)" class="takeAction">
+          Employ Details
+        </button>
+      </td>
     </tr>
   </table>
 </div>
